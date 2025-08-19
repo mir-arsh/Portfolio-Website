@@ -11,43 +11,43 @@ var typed = new Typed(".auto-type", {
 const header = document.querySelector('header');
 let isShrunk = false;
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50 && !isShrunk) {
-    document.querySelectorAll(".scrolled").forEach(el => {
-      el.style.transform = "scale(0.9)";
-      el.style.transition = "transform 0.3s ease";
-    });
-    header.style.height = "4rem";
-    isShrunk = true;
-  } 
-  else if (window.scrollY <= 50 && isShrunk) {
-    document.querySelectorAll(".scrolled").forEach(el => {
-      el.style.transform = "scale(1)";
-      el.style.transition = "transform 0.3s ease";
-    });
-    header.style.height = "5rem";
-    isShrunk = false;
-  }
+    if (window.scrollY > 50 && !isShrunk) {
+        document.querySelectorAll(".scrolled").forEach(el => {
+            el.style.transform = "scale(0.9)";
+            el.style.transition = "transform 0.3s ease";
+        });
+        header.style.height = "4rem";
+        isShrunk = true;
+    }
+    else if (window.scrollY <= 50 && isShrunk) {
+        document.querySelectorAll(".scrolled").forEach(el => {
+            el.style.transform = "scale(1)";
+            el.style.transition = "transform 0.3s ease";
+        });
+        header.style.height = "5rem";
+        isShrunk = false;
+    }
 });
 
 
 //Testimonial Carousel
 $('.testimonials-container').owlCarousel({
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:2000,
-    margin:10,
-    nav:false,
-    responsive:{
-        0:{
-            items:1,
-            nav:false
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    margin: 10,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false
         },
-        970:{
-            items:1,
-            nav:true
+        970: {
+            items: 1,
+            nav: true
         },
-        971:{
-            items:2
+        971: {
+            items: 2
         },
     }
 })

@@ -436,7 +436,8 @@ footer {
     box-shadow: 0 10px 20px rgba(132, 41, 223, 0.4);
 }
 
-.interest-item i, .skill-item i {
+.interest-item i,
+.skill-item i {
     font-size: 2.5rem;
     color: #944fda;
 }
