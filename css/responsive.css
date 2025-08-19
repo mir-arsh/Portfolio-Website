@@ -1,0 +1,339 @@
+.hambur {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    display: none;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 18rem;
+    height: 100vh;
+    background-color: rgb(10, 18, 58);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    border-left: 1px solid #8429df;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav.active {
+    transform: translateX(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #e9d3ff;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #944fda;
+}
+
+.mobile-nav-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-links li {
+    margin: 2rem 0;
+}
+
+.mobile-nav-links a {
+    text-decoration: none;
+    color: #e9d3ff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav-links a:hover {
+    background-color: #5900b3;
+}
+
+.mobile-nav-social {
+    margin-top: 3rem;
+}
+
+.mobile-nav-social a {
+    color: #e9d3ff;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    .work {
+        flex-direction: column;
+    }
+
+    .work div {
+        flex-direction: row;
+    }
+
+    .work h1 {
+        margin-right: 0;
+    }
+
+    .about-left,
+    .about-right,
+    .projects-container {
+        animation: none;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+
+    .nav-btn,
+    .nav-social {
+        display: none;
+    }
+
+    .hambur {
+        display: flex;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer-about {
+        margin-right: 10rem;
+        margin-left: 2rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-left p {
+        width: 100%;
+    }
+
+    .skills ul li {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .footer-about {
+        margin-right: 5rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .portfolio-image-section {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .portfolio {
+        flex-direction: column;
+        height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .footer-container {
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+
+    .footer-about {
+        margin-left: auto;
+    }
+
+    .contact-header,
+    .contact-container,
+    .about-profile,
+    .about-interests,
+    .about-skills,
+    .services-container {
+        animation: none;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .work h1 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .work h1 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .project-container {
+        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects {
+        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .work h1 {
+        font-size: 60px;
+    }
+
+    .work div {
+        transform: scale(0.9);
+    }
+
+    .portfolio {
+        transform: scale(0.9);
+        height: 48rem;
+    }
+
+    .about-right ul li {
+        width: 100%;
+    }
+
+    #creation {
+        margin-top: 3rem;
+    }
+
+    .pcl {
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .footer-container {
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: -2rem;
+    }
+
+    .testimonial-card .test-card-body {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .portfolio {
+        transform: scale(0.8);
+        height: 50rem;
+        padding-top: 0rem;
+    }
+
+    .testimonials-container {
+        animation: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .footer-about h1 {
+        font-size: 1.5rem;
+    }
+
+    .work h1 {
+        font-size: 50px;
+    }
+
+    .work button {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .footer-container,
+    .footer-about {
+        margin: 0 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .work button {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .contact-info {
+        transform: scale(0.8);
+    }
+
+    .info-item {
+        margin: 0 0 0 -2rem;
+    }
+
+    .project-card,
+    .service-card,
+    .book-now-button {
+        transform: scale(0.9);
+    }
+
+    #services {
+        margin: 0 0 0 0;
+        padding: 5rem 0 5rem 0;
+    }
+
+    .work h1 {
+        font-size: 40px;
+    }
+
+    .work button {
+        transform: scale(0.7);
+    }
+}
