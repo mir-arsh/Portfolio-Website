@@ -111,54 +111,6 @@ header {
     flex-wrap: wrap;
 }
 
-.contact-form {
-    flex: 1;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    border: 1px solid #361458;
-    background-color: #161028;
-    color: #e9d3ff;
-    font-family: "Delius", cursive;
-    font-size: 1rem;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #8429df;
-    box-shadow: 0 0 10px rgba(132, 41, 223, 0.5);
-}
-
-.contact-form textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.contact-form button {
-    color: #e9d3ff;
-    background: linear-gradient(135deg, #8429df, #7661f0);
-    border: none;
-    padding: 12px 24px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.contact-form button:hover {
-    background: linear-gradient(135deg, #6c20b5, #8d48d1);
-    transform: scale(1.02);
-    box-shadow: 0 4px 15px rgba(132, 41, 223, 0.4);
-}
-
 .contact-info {
     flex: 1;
     min-width: 300px;
