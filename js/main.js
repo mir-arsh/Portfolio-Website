@@ -1,6 +1,6 @@
 //autotype for hero section
 var typed = new Typed(".auto-type", {
-    strings: ["Websites", "Apps", "Graphics", "AI Softwares", "Robots"],
+    strings: ["Softwares", "Websites", "Graphics", "AI Softwares", "Videos"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
