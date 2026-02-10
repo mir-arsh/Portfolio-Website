@@ -63,17 +63,6 @@ function sendEmail() {
     window.open(mailtoLink, '_blank');
 }
 
-//Call Function
-function callMe() {
-    var phoneNumber = "8899654953";
-    window.location.href = `tel:${phoneNumber}`;
-}
-
-//Location Function
-function openMap() {
-    window.open("https://maps.google.com/?q=Namlabal+Pampore+Pulwama", "_blank");
-}
-
 // Service/Consultation Form Function
 const contactModal = document.querySelector('.contact-form-modal');
 const openModalBtn = document.querySelector('.book-now-button');

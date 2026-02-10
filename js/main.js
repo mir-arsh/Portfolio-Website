@@ -1,6 +1,6 @@
 //autotype for hero section
 var typed = new Typed(".auto-type", {
-    strings: ["Softwares", "Websites", "Graphics", "AI Softwares", "Videos"],
+    strings: ["Websites",  "AI Softwares", "Businesses"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
@@ -59,17 +59,6 @@ function sendEmail() {
     var body = "";
     var mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink, '_blank');
-}
-
-//Call Function
-function callMe() {
-    var phoneNumber = "8899654953";
-    window.location.href = `tel:${phoneNumber}`;
-}
-
-//Location Function
-function openMap() {
-    window.open("https://maps.app.goo.gl/ydvQHM76PYkMJPtr9", "_blank");
 }
 
 // Hamburger Menu Functionality
