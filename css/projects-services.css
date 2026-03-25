@@ -428,6 +428,7 @@ footer {
 .projects-header {
     text-align: center;
     margin-bottom: 3rem;
+    margin-top: 8rem;
 }
 
 .projects-header h2 {
@@ -448,11 +449,14 @@ footer {
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    /* display: grid; */
     margin-left: 5rem;
     margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    /* gap: 2rem; */
 }
 
 .project-card {
@@ -820,4 +824,12 @@ footer {
 
 .prev-button:hover {
     background-color: #20183b;
+}
+
+header {
+    top: 0;
+}
+
+article {
+    max-width: 27rem;
 }
