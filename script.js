@@ -35,6 +35,31 @@ closeBtn.addEventListener('click', closeModal);
 backdrop.addEventListener('click', function (e) { if (e.target === backdrop) closeModal(); });
 document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
+var mobileNav = document.getElementById('mobileNav');
+var navToggleBtn = document.querySelector('.nav-menu-toggle');
+var mobileNavClose = document.querySelector('.mobile-nav-close');
+
+function openMobileNav() {
+    mobileNav.classList.add('open');
+    mobileNav.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+navToggleBtn.addEventListener('click', openMobileNav);
+mobileNavClose.addEventListener('click', closeMobileNav);
+mobileNav.addEventListener('click', function (e) {
+    if (e.target === mobileNav) closeMobileNav();
+});
+document.querySelectorAll('.mobile-nav-links a').forEach(function (link) {
+    link.addEventListener('click', closeMobileNav);
+});
+
 /* Scroll-reveal */
 var revealEls = document.querySelectorAll('.reveal');
 var ro = new IntersectionObserver(function (entries) {
