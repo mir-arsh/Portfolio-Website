@@ -1,256 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A portfolio website that showcases the art of code by Mir Arsh Zaffar.">
-    <title>Mir Arsh Zaffar - Innovate Explore Evolve Impact</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mir Arsh Zaffar — AI-powered full-stack developer building impactful products and technology-driven ventures." />
+  <title>Mir Arsh Zaffar</title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="overlay"></div>
-    <div class="mobile-nav">
-        <i class="ri-close-line close-btn"></i>
-        <ul class="mobile-nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects-services.html">Projects & Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="mobile-nav-social">
-            <a href="https://linkedin.com"><i class="ri-linkedin-fill"></i></a>
-            <a href="https://x.com"><i class="ri-twitter-x-line"></i></a>
-            <a href="https://www.instagram.com/mir_arsh_zaffar/"><i class="ri-instagram-fill"></i></a>
-        </div>
+
+<!-- HEADER -->
+<header id="siteHeader">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>Mir Arsh Zaffar</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Builds</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="nav-social-icons">
+        <a href="https://linkedin.com" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://x.com" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+        <a href="https://github.com/mir-arsh/" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+      </div>
+      <a href="#contact" class="btn btn-primary" style="font-size:.88rem;padding:.6rem 1.2rem;">Connect</a>
     </div>
-    <header>
-        <a href="index.html"><img src="images/favicon.png" alt="Mir Arsh Zaffar" class="scrolled"></a>
-        <ul class="nav-btn scrolled">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects-services.html">Projects & Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-social scrolled">
-            <a href="https://linkedin.com"><i class="ri-linkedin-fill"></i></a>
-            <a href="https://x.com"><i class="ri-twitter-x-line"></i></a>
-            <a href="https://www.instagram.com/mir_arsh_zaffar/"><i class="ri-instagram-fill"></i></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Build a Tech Venture
+      </div>
+      <h1 class="hero-h1">
+        I build<br />
+        <span class="gradient-text typed-wrap"><span id="typed-text"></span><span class="cursor"></span></span>
+      </h1>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="ri-code-s-slash-line"></i> View Builds
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="ri-send-plane-line"></i> Get in Touch
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Projects Shipped</div>
         </div>
-        <i class="ri-menu-4-line hambur"></i>
-    </header>
-    <section class="portfolio">
-        <div class="portfolio-text-section">
-            <p class="portfolio-text">Innovate Explore Evolve Impact</p>
-            <p class="portfolio-h1">I design experiences<br>that endore people:<br><span class="auto-type"></span></p>
-            <a href="projects-services.html"><button>Explore!</button></a>
+        <div class="stat-item">
+          <div class="stat-number">AI</div>
+          <div class="stat-label">First Approach</div>
         </div>
-        <div class="portfolio-image-section">
-            <img src="images/arsh.png" alt="Arsh's Image">
+        <div class="stat-item">
+          <div class="stat-number">Business</div>
+          <div class="stat-label">Mindset</div>
         </div>
-    </section>
-    <section class="about">
-        <div class="about-left">
-            <h2>About Me</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a dynamic person
-                with a passion for exploring the world, innovating through
-                technology, and pursuing ambitious goals. With hobbies ranging from learning, coding,
-                and exploring tech innovations, I stay as versatile as I remain curious.
-                My interests span cutting-edge technology, AI and software development. I equally
-                find fascination in, business and personal growth.
-                With a blend of professionalism, creativity, and a hint of humour, I strive to push boundaries, create
-                impact, and continuously evolve in my journey.
-            </p>
-        </div>
-        <div class="about-right">
-            <h2>Skills</h2>
-            <div class="skills">
-                <ul>
-                    <li><span>Software Development</span><br>HTML, CSS, JS, ReactJS, NodeJS, MongoDB & Auth
-                    </li>
-                    <li><span>Aritifial Intelligence</span><br>Python, NumPy, Pandas, Matplotlib, ScikitLearn and PyTorch</li>
-                    <li><span>Business & Entrepreneurship</span><br>Business Strategy, Marketing, Leadership, and
-                        Innovation</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="projects-header">
-            <h2 id="creation">Creations & Code</h2>
-            <p>A selection of projects that showcase my passion for innovation.</p>
-        </div>
-        <div class="projects-container">
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="data:image/jpeg;base64,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"
-                        alt="Chat Web App">
-                </div>
-                <div class="project-content">
-                    <h3>Auth System</h3>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>NodeJS (Express)</span>
-                        <span>MongoDB</span>
-                        <span>Clerk</span>
-                    </div>
-                    <p>Full-stack authentication system built with React, Node.js, MongoDB, and Clerk. Features include
-                        signup, login, logout, protected routes, email verification, password reset, Google OAuth, and
-                        role-based access (admin/user) provided with specialized dashboards with a secure and scalable
-                        architecture.</p>
-                    <div class="project-links">
-                        <a href="https://arsh-auth.vercel.app/" class="project-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                            Live Demo
-                        </a>
-                        <a href="https://github.com/mir-arsh/Auth-System" class="project-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.7 2.7 5.8 5.5 6.1-.6.5-.9 1.2-.9 2.2V22">
-                                </path>
-                            </svg>
-                            Source Code
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="work">
-        <h1>Work With Me!</h1>
-        <div>
-            <a href="#contact"><button>Contact</button></a>
-            <a href="projects-services.html"><button>Explore</button></a>
-        </div>
-    </section>
-    <div class="testimonials-section">
-        <div class="section-header">
-            <h1>What My Clients Say!</h1>
-        </div>
-        <div class="owl-carousel owl-theme testimonials-container">
-            <div class="item testimonial-card">
-                <main class="test-card-body">
-                    <p>"Arsh’s creativity and technical execution remind me of what it takes to truly innovate. His
-                        ability to merge design with functionality, especially in robotics and AI, reflects a
-                        forward-thinking mindset that will shape the future. He builds, adapts, and pushes boundaries
-                        fearlessly."</p>
-                </main>
-                <div class="profile">
-                    <div class="profile-image">
-                        <img src="https://imgs.search.brave.com/3xi1LQ2FSJQSaIpdmJ0pKu_X8GyT8m_U4yA_vyUsotk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9jL2MzL1N1/bmRhcl9QaWNoYWlf/LV8yMDIzXyUyOGNy/b3BwZWQlMjkuanBn/LzUxMnB4LVN1bmRh/cl9QaWNoYWlfLV8y/MDIzXyUyOGNyb3Bw/ZWQlMjkuanBn"
-                            alt="Client Picture">
-                    </div>
-                    <div class="profile-desc">
-                        <span>Sundar Pichai</span>
-                        <span>CEO - Alphabet & Google</span>
-                    </div>
-                </div>
-            </div>
-            <div class="item testimonial-card">
-                <main class="test-card-body">
-                    <p>"I believe technology should empower, and Arsh’s work reflects that principle strongly. His
-                        projects bridge technical depth with practical application, showing thoughtful problem-solving.
-                        With curiosity driving him forward, he exemplifies how young innovators can contribute
-                        meaningfully to both business and society."</p>
-                </main>
-                <div class="profile">
-                    <div class="profile-image">
-                        <img src="https://imgs.search.brave.com/IcjbmnM-oHZULim4oyhEW4sysk7UvU5HkPUfxeEXz08/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9mL2Y4L1Jh/dGFuX1RhdGFfcGhv/dG8uanBnLzUxMnB4/LVJhdGFuX1RhdGFf/cGhvdG8uanBn"
-                            alt="Client Picture">
-                    </div>
-                    <div class="profile-desc">
-                        <span>Late Mr. Ratan Tata</span>
-                        <span>Former chairman - Tata Group.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="item testimonial-card">
-                <main class="test-card-body">
-                    <p>"Arsh thinks big and executes with clarity, qualities that every great builder should have. His
-                        projects demonstrate customer-centric thinking, adaptability, and vision. I admire how he
-                        integrates innovation into real solutions, a key trait for those who aspire to leave meaningful
-                        impact."</p>
-                </main>
-                <div class="profile">
-                    <div class="profile-image">
-                        <img src="https://imgs.search.brave.com/-psAscFKfuORq3lPUHHUolWKPmNOTntEnk-g9Z-gn80/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9qZWZmLWJl/em9zLTI2MG53LTI0/MjA2NTY1NjEuanBn"
-                            alt="Client Picture">
-                    </div>
-                    <div class="profile-desc">
-                        <span>Jeff Bezoz</span>
-                        <span>Founder - Amazon</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-glow"></div>
+      <div class="hero-photo-ring">
+        <img src="logo.png" alt="Mir Arsh Zaffar" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-        <div class="contact-header">
-            <h2>Get in Touch</h2>
-            <p>Have a project in mind or just want to say hello? Feel free to reach out.</p>
+<!-- ABOUT -->
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title">Builder. Thinker. <span class="gradient-text">Innovator.</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi, I'm <strong>Mir Arsh Zaffar</strong> — currently a Grade 10 student with a serious passion for AI-powered full-stack development. I enjoy crafting impactful product and business solutions driven by technology.</p>
+        <p>I'm focused on developing technology-driven ventures while continuously expanding my skills in the tech space. Whether building from scratch or shipping smarter integrations, I bring curiosity, discipline, and ambition to every project.</p>
+        <p>I'm always open to meaningful conversations, collaborations, and opportunities to learn. Let's build something remarkable together.</p>
+        <br />
+        <a href="https://github.com/mir-arsh/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+          <i class="ri-github-fill"></i> github.com/mir-arsh
+        </a>
+      </div>
+      <div class="reveal" style="transition-delay:.15s">
+        <div class="skills-grid">
+          <div class="skill-chip">
+            <i class="ri-code-s-slash-line"></i>
+            <h4>Frontend</h4>
+            <p>HTML, CSS, JavaScript, React</p>
+          </div>
+          <div class="skill-chip">
+            <i class="ri-server-line"></i>
+            <h4>Backend</h4>
+            <p>Node.js, Express, REST APIs</p>
+          </div>
+          <div class="skill-chip">
+            <i class="ri-database-2-line"></i>
+            <h4>Database</h4>
+            <p>MongoDB, Mongoose</p>
+          </div>
+          <div class="skill-chip">
+            <i class="ri-brain-line"></i>
+            <h4>AI Integration</h4>
+            <p>LLM APIs, automation workflows</p>
+          </div>
+          <div class="skill-chip">
+            <i class="ri-git-branch-line"></i>
+            <h4>Dev Tools</h4>
+            <p>Git, GitHub, Vercel, Netlify</p>
+          </div>
+          <div class="skill-chip">
+            <i class="ri-lightbulb-flash-line"></i>
+            <h4>Strategy</h4>
+            <p>Business, marketing, leadership</p>
+          </div>
         </div>
-        <div class="contact-container">
-            <div class="contact-info" onclick="sendEmail()">
-                <div class="info-item">
-                    <i class="ri-mail-line"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>mirarsh6119@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                <a href="index.html"><img src="images/favicon.png" alt="Mir Arsh Zaffar">
-                    <h1>Mir Arsh Zaffar</h1>
-                </a>
-                <p>Designing and building innovative solutions that create a lasting impact. Let's connect and create
-                    something amazing together.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects-services.html">Projects & Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>Follow Me</h4>
-                <div class="social-icons">
-                    <a href="https://linkedin.com"><i class="ri-linkedin-fill"></i></a>
-                    <a href="https://x.com"><i class="ri-twitter-x-line"></i></a>
-                    <a href="https://www.instagram.com/mir_arsh_zaffar/"><i class="ri-instagram-fill"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mir Arsh Zaffar. All Rights Reserved.</p>
-        </div>
-    </footer>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Creations &amp; Code</span>
+      <h2 class="section-title">Things I've <span class="gradient-text">Shipped</span></h2>
+      <p style="color:var(--muted);margin-top:.8rem;font-size:1rem;">
+        A curated selection of builds that reflect my passion for innovation.
+        More on <a href="https://github.com/mir-arsh/" style="color:var(--accent)">GitHub &#8594;</a>
+      </p>
+    </div>
+    <div class="projects-grid">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="js/index.js"></script>
+      <article class="project-card reveal">
+        <img class="project-thumb" src="auth.png" alt="Auth System" />
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Clerk</span>
+          </div>
+          <h3>Auth System</h3>
+          <p>Full-stack authentication with signup, login, logout, protected routes, email verification, password reset, Google OAuth, and role-based dashboards.</p>
+          <div class="project-links">
+            <a href="https://arsh-auth.vercel.app/" class="link-live" target="_blank" rel="noopener noreferrer">
+              <i class="ri-external-link-line"></i> Live
+            </a>
+            <a href="https://github.com/mir-arsh/Auth-System" class="link-code" target="_blank" rel="noopener noreferrer">
+              <i class="ri-github-fill"></i> Source
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:.1s">
+        <img class="project-thumb" src="ai.png" alt="AI-Powered App" />
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">AI Integration</span>
+            <span class="tag">Full-Stack</span>
+          </div>
+          <h3>AI-Powered App</h3>
+          <p>Building intelligent web applications with LLM integrations that automate workflows and deliver personalized user experiences at scale.</p>
+          <div class="project-links">
+            <a href="https://github.com/mir-arsh/" class="link-code" target="_blank" rel="noopener noreferrer">
+              <i class="ri-github-fill"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:.2s">
+        <img class="project-thumb" src="portfolio.png" alt="Portfolio Website" />
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3>Portfolio Website</h3>
+          <p>This very portfolio — designed and engineered from the ground up with a focus on performance, clean code, and a distinctive visual identity.</p>
+          <div class="project-links">
+            <a href="https://mirarsh.netlify.app" class="link-live" target="_blank" rel="noopener noreferrer">
+              <i class="ri-external-link-line"></i> Live
+            </a>
+            <a href="https://github.com/mir-arsh/Portfolio-Website" class="link-code" target="_blank" rel="noopener noreferrer">
+              <i class="ri-github-fill"></i> Source
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section section-alt">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Services</span>
+      <h2 class="section-title">Crafting Your <span class="gradient-text">Vision</span></h2>
+      <p style="color:var(--muted);margin-top:.8rem;font-size:1rem;max-width:560px;">
+        Tailored digital solutions to turn your ideas into reality.
+      </p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-icon-wrap"><i class="ri-code-s-slash-line"></i></div>
+        <h3>Web Development</h3>
+        <p>High-performance, responsive web apps built with modern tech stacks. Seamless user experiences that are both beautiful and functional.</p>
+      </article>
+      <article class="service-card reveal" style="transition-delay:.1s">
+        <div class="service-icon-wrap"><i class="ri-brain-line"></i></div>
+        <h3>AI Integration</h3>
+        <p>Infuse intelligence into your platform — automating processes, personalizing experiences, and surfacing powerful insights through AI.</p>
+      </article>
+      <article class="service-card reveal" style="transition-delay:.2s">
+        <div class="service-icon-wrap"><i class="ri-lightbulb-flash-line"></i></div>
+        <h3>Business Consulting</h3>
+        <p>Expert guidance on technology strategy, architecture, and project planning — from first idea to a clear, executable path forward.</p>
+      </article>
+    </div>
+    <div class="services-cta reveal">
+      <button class="btn btn-primary" id="openModalBtn" style="font-size:1rem;padding:.9rem 2rem;">
+        <i class="ri-calendar-line"></i> Book a Consultation
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING MODAL -->
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" id="closeModalBtn" aria-label="Close modal"><i class="ri-close-line"></i></button>
+    <h2 id="modalTitle">Let's Craft Your Vision</h2>
+    <p class="modal-sub">Tell me about your project and I'll get back to you shortly.</p>
+    <form class="c-form" action="https://formspree.io/f/meozwjny" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="m-name">Name</label>
+          <input type="text" id="m-name" name="name" placeholder="Your name" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="m-email">Email</label>
+          <input type="email" id="m-email" name="email" placeholder="you@email.com" required autocomplete="email" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="m-phone">Phone (optional)</label>
+        <input type="tel" id="m-phone" name="phone" placeholder="+91 XXXXX XXXXX" autocomplete="tel" />
+      </div>
+      <div class="form-group">
+        <label for="m-service">I'm interested in&#8230;</label>
+        <select id="m-service" name="service" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="web-development">Web Development</option>
+          <option value="ai-integration">AI Integration</option>
+          <option value="consulting">Business Consulting</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="m-desc">Project Description</label>
+        <textarea id="m-desc" name="description" placeholder="Briefly describe your project or needs&#8230;" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <i class="ri-send-plane-line"></i> Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Social Proof</span>
+      <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+    </div>
+    <div class="testimonials-track">
+
+      <div class="testimonial-card reveal">
+        <div class="quote-icon">&#x275D;</div>
+        <p class="testimonial-text">Arsh's creativity and technical execution remind me of what it takes to truly innovate. His ability to merge design with functionality reflects a forward-thinking mindset that will shape the future. He builds, adapts, and pushes boundaries fearlessly.</p>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://imgs.search.brave.com/3xi1LQ2FSJQSaIpdmJ0pKu_X8GyT8m_U4yA_vyUsotk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9jL2MzL1N1/bmRhcl9QaWNoYWlf/LV8yMDIzXyUyOGNy/b3BwZWQlMjkuanBn/LzUxMnB4LVN1bmRh/cl9QaWNoYWlfLV8y/MDIzXyUyOGNyb3Bw/ZWQlMjkuanBn" alt="Sundar Pichai" loading="lazy" />
+          <div class="author-info">
+            <div class="author-name">Sundar Pichai</div>
+            <div class="author-role">CEO &#8212; Alphabet &amp; Google</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:.1s">
+        <div class="quote-icon">&#x275D;</div>
+        <p class="testimonial-text">I believe technology should empower, and Arsh's work reflects that principle strongly. His projects bridge technical depth with practical application, showing thoughtful problem-solving and curiosity that exemplifies how young innovators can contribute meaningfully.</p>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://imgs.search.brave.com/IcjbmnM-oHZULim4oyhEW4sysk7UvU5HkPUfxeEXz08/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9mL2Y4L1Jh/dGFuX1RhdGFfcGhv/dG8uanBnLzUxMnB4/LVJhdGFuX1RhdGFf/cGhvdG8uanBn" alt="Ratan Tata" loading="lazy" />
+          <div class="author-info">
+            <div class="author-name">Late Mr. Ratan Tata</div>
+            <div class="author-role">Former Chairman &#8212; Tata Group</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:.2s">
+        <div class="quote-icon">&#x275D;</div>
+        <p class="testimonial-text">Arsh thinks big and executes with clarity &#8212; qualities every great builder must have. His projects demonstrate customer-centric thinking, adaptability, and vision. I admire how he integrates innovation into real solutions, a key trait for those who aspire to leave meaningful impact.</p>
+        <div class="testimonial-author">
+          <img class="author-avatar" src="https://imgs.search.brave.com/-psAscFKfuORq3lPUHHUolWKPmNOTntEnk-g9Z-gn80/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9qZWZmLWJl/em9zLTI2MG53LTI0/MjA2NTY1NjEuanBn" alt="Jeff Bezos" loading="lazy" />
+          <div class="author-info">
+            <div class="author-name">Jeff Bezos</div>
+            <div class="author-role">Founder &#8212; Amazon</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info-side reveal">
+        <p>Have a project in mind, want to collaborate, or just want to say hello? Reach out &#8212; I read every message.</p>
+        <div class="contact-links">
+          <div class="contact-link-item" role="button" tabindex="0" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=mirarsh6119@gmail.com&su=Let%27s%20Talk!','_blank')" onkeydown="if(event.key==='Enter')this.click()">
+            <div class="contact-link-icon"><i class="ri-mail-line"></i></div>
+            <div class="contact-link-text">
+              <h4>Email</h4>
+              <p>mirarsh6119@gmail.com</p>
+            </div>
+          </div>
+          <a class="contact-link-item" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <div class="contact-link-icon"><i class="ri-linkedin-fill"></i></div>
+            <div class="contact-link-text">
+              <h4>LinkedIn</h4>
+              <p>Connect professionally</p>
+            </div>
+          </a>
+          <a class="contact-link-item" href="https://www.instagram.com/mir_arsh_zaffar/" target="_blank" rel="noopener noreferrer">
+            <div class="contact-link-icon"><i class="ri-instagram-fill"></i></div>
+            <div class="contact-link-text">
+              <h4>Instagram</h4>
+              <p>@mir_arsh_zaffar</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-side reveal" style="transition-delay:.15s">
+        <form class="c-form" action="https://formspree.io/f/meozwjny" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name">Name</label>
+              <input type="text" id="c-name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email</label>
+              <input type="email" id="c-email" name="email" placeholder="you@email.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c-subject">Subject</label>
+            <input type="text" id="c-subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" name="message" placeholder="Tell me about your project or idea&#8230;" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="ri-send-plane-line"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#hero" class="footer-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>Mir Arsh Zaffar</span>
+    </a>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Builds</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://linkedin.com" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://x.com" aria-label="Twitter / X"><i class="ri-twitter-x-line"></i></a>
+      <a href="https://www.instagram.com/mir_arsh_zaffar/" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+      <a href="https://github.com/mir-arsh/" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2026 Mir Arsh Zaffar. All Rights Reserved.</p>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <i class="ri-arrow-up-line"></i>
+</button>
+
+<script src="script.js"></script>
 </body>
-
 </html>
